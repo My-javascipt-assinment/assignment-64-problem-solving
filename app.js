@@ -36,37 +36,120 @@ short and smart way to extracting array elements and storing them in seperate va
 // const [studentOne, studentTwo,studenThree, studenFour,studenFive] = names
 // console.log(studentOne);
 // console.log(studenFour)
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 3 =========================================
+spread operator is a feature of js that is used to 
+merge/combine array or object 
+copy array or object 
+add data to an array or object 
+expand elements of an array or object 
+======================================= Answer =====================================*/
+/* const arr1 = [1,2,3];
+const arr2 = [...arr1,4,5];
+console.log(arr2)
+
+const obj1 = {name : 'Aiz'};
+const obj2 = {...obj1,age : 30};
+console.log(obj2)
+ */
+/*==================================== Question No 4 =========================================
+speread operator is used to expand the elements of an array or object
+======================================= Answer =====================================*/
+/* let arr1 = [1,2];
+let arr2 = [3,4];
+// let arr = arr1.concat(arr2);
+let arr = [...arr1,...arr2]
+console.log(arr)
+let copy = [...arr];
+console.log('copy : ',copy)
+copy = [...copy,6,7,8];
+console.log(copy)
+ */
+// object 
+
+/* let obj1 = {name: 'Aziz'}
+let obj2 = {age : 30};
+// let obj = obj1.concat(obj2);
+let obj = {...obj1,...obj2};
+console.log(obj)
+
+let objCopy = {...obj};
+objCopy = {...objCopy,designation :'developer',city : 'karachi'}
+console.log(objCopy); */
+
+
+/*==================================== Question No 5 =========================================
+set is a method of js and we can stroe unique values in array by using set method
+======================================= Answer =====================================*/
+// const numbers = new Set([1,1,1,2,2,3,4,4,4,5,6,7]);
+// console.log(numbers)
+
+/*==================================== Question No 6 =========================================
 
 ======================================= Answer =====================================*/
+/* let arr = [
+  [11, 2, 4],
+  [4, 5, 6],
+  [10, 8, -12]
+];
+
+let leftSum = 0;
+let rightSum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  leftSum = leftSum + arr[i][i];               // left diagonal
+  rightSum = rightSum + arr[i][arr.length - 1 - i]; // right diagonal
+}
+
+let result = Math.abs(leftSum - rightSum);
+
+console.log(result);
+ */
+
+/* let arr = [
+  [11, 2, 4],
+  [4, 5, 6],
+  [10, 8, -12]
+];
+
+let leftSum = 0;
+let rightSum = 0;
+
+for(let i = 0; i < arr.length;i++){
+    let a = arr[0][0];
+    let b = arr[1][1];
+    let c = arr[2][2]
+    // right
+
+    let d = arr[0][2];
+    let e = arr[1][1];
+    let f = arr[2][0];
+    leftSum = a+b + c;
+    rightSum = d + e + f;
+    var result = leftSum - rightSum;
+    result = Math.abs(result);
+
+}
+console.log(result) */
 
 
+// let arr = [
+//   [11, 2, 4,9],
+//   [4, 5, 6,3],
+//   [10, 8, -12,5],
+//   [5,2,1,12]
+// ]; 
 
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
+// let leftSum = 0;
+// let rightSum = 0;
+// for(let i = 0;i < arr.length ;i++){
+//      console.log(arr[i][i])
+//     // console.log(arr[i][arr.length-1-i])
+//     leftSum += arr[i][i];
+//     rightSum += arr[i][arr.length-1-i];
+    
+// }
+// let result = Math.abs(leftSum - rightSum);
+// console.log(result)
 
 /*==================================== Question No 1 =========================================
 
