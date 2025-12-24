@@ -617,18 +617,44 @@ const obj = {name : 'aziz'}
 
 let ans = details.bind(obj,'Karachi',30)
 ans() */
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 28 =========================================
+bulb on /off
 ======================================= Answer =====================================*/
 
 
+// /* function bulbOnfunction() {
+//   const bulb = document.getElementById('bulboffImg');
+//   const heading = document.getElementById('heading');
+//   const btn = document.getElementById('btn');
+//  if(bulb.src.includes('off.jpeg')){
+//   bulb.src = './assets/on.jpeg';
+//   heading.innerHTML = 'bulb is now on';
+//   btn.innerHTML = 'bulb off'
+//  }
+//  else{
+//   bulb.src ='./assets/off.jpeg';
+//   heading.innerHTML = 'bulb is now off';
+//   btn.innerHTML = 'bulb on'
+//  }
+// } */
 
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 29 =========================================
 
 ======================================= Answer =====================================*/
 
+function first(){
+  let apple = document.getElementById('image');
+  apple.src = "./assets/mango.jpeg"
+  
+  }
+  function secnod(){
+    let apple = document.getElementById('image');
+    apple.src = "./assets/apple.jpeg"
+  }
+
+  
 
 
 
