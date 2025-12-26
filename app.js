@@ -641,10 +641,10 @@ bulb on /off
 
 
 /*==================================== Question No 29 =========================================
-
+onmouseover and onmouseout
 ======================================= Answer =====================================*/
 
-function first(){
+/* function first(){
   let apple = document.getElementById('image');
   apple.src = "./assets/mango.jpeg"
   
@@ -654,33 +654,70 @@ function first(){
     apple.src = "./assets/apple.jpeg"
   }
 
-  
+   */
 
 
+
+/*==================================== Question No 30 =========================================
+bulb on/off function
+======================================= Answer =====================================*/
+
+/* function onofffunction(){
+  let getHeading = document.getElementById('heading');
+  let getImg = document.getElementById('img');
+  let getBtn = document.getElementById('btn');
+  if(getImg.src.includes("off.jpeg")){
+    getImg.src = "./assets/on.jpeg";
+    getBtn.innerHtml = 'off';
+    getHeading.innerHTML = 'Bulb is now On'
+  }
+  else{
+    getImg.src = "./assets/off.jpeg";
+    getBtn.innerHTML = 'on';
+    getHeading.innerHTML = 'Bulb is now off'
+  }
+}
+
+ */
+
+/*==================================== Question No 31 =========================================
+compare two arrays
+======================================= Answer =====================================*/
+/* let arrayOne = ['apple','mango','orange'];
+let arrayTwo = ['apple','mango','orange'];
+let isTrue = true;
+for(let i = 0;i < arrayOne.length;i++){
+  if(arrayOne[i] !== arrayTwo[i]){
+    isTrue = false;
+    break;
+  }
+}
+if(isTrue){
+  console.log('array elements are equal ')
+}
+else{
+  console.log('array elements are not equal')
+}
+ */
 
 /*==================================== Question No 1 =========================================
 
 ======================================= Answer =====================================*/
+// localstroage
+/* localStorage.setItem('name','Aziz')
+localStorage.setItem('location','karachi');
+localStorage.removeItem('location')
+alert(localStorage.getItem('name'))
+ */
 
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
+// session storage 
+/* sessionStorage.setItem('designation','developer');
+sessionStorage.setItem('year',2022);
+sessionStorage.removeItem('designation');
+sessionStorage.clear();
+console.log(sessionStorage.getItem('year'))
+alert(sessionStorage.getItem('designation'))
+ */
 
 
 
