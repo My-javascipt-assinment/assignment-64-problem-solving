@@ -700,8 +700,8 @@ else{
 }
  */
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 32 =========================================
+local storage, session storage and cookies
 ======================================= Answer =====================================*/
 // localstroage
 /* localStorage.setItem('name','Aziz')
@@ -722,64 +722,163 @@ alert(sessionStorage.getItem('designation'))
 
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 33 =========================================
+map() 
+map is an array method, it returns a new array , it does not modify origional array, by using map 
+we can apply any change on the each element of an array
+======================================= Answer =====================================*/
+/* let arr = [1,2,3,4,5,6];
+let newArr = arr.map((item,index)=>{
+  return(item*3)
+})
+console.log(newArr) */
 
+/* let arr = [1,2,3,4,5,6];
+let result = [];
+for(let i = 0;i < arr.length;i++){
+  console.log(arr[i]*5);
+  result.push(arr[i]*5)
+}
+
+console.log(result) */
+
+
+/*==================================== Question No 34 =========================================
+filter is a js array method , it does not modify origional array it give us new array that is 
+consisted of items according to our condition,
+======================================= Answer =====================================*/
+/* const fruits = ['apple','mango','orange','mango','grapes','banana','mango'];
+let result = fruits.filter((item)=>{
+  return item === 'mango'
+})
+console.log(result) */
+
+
+/* const fruits = ['apple','mango','orange','mango','grapes','banana','mango'];
+let ans = [];
+for(let i = 0;i < fruits.length;i++){
+if(fruits[i] === 'mango'){
+  ans.push(fruits[i])
+}
+}
+console.log(ans) */
+
+/*==================================== Question No 35 =========================================
+reduce( );
+======================================= Answer =====================================*/
+/* let arr = [2,3,4];
+let ans = arr.reduce((accumulate,current)=>{
+  return accumulate + current;
+},1)
+console.log(ans) */
+
+/*==================================== Question No 36 =========================================
+getComputedStyle is a method and it bring all the css applied on html element in js and 
+parseInt is also a method , if we have number string like '200px' it give us only number and removes text
 ======================================= Answer =====================================*/
 
+/* let span = document.getElementById('span');
+
+function increasefontsize(){
+  let currentSize = window.getComputedStyle(span).fontSize;
+  let fontSize = parseInt(currentSize);
+  fontSize = fontSize + 2;
+  span.style.fontSize = fontSize + 'px';
+  console.log(fontSize,typeof fontSize)
+  console.log(currentSize)
+}
 
 
+
+function decreasefontsize(){
+  let currentSize = window.getComputedStyle(span).fontSize;
+  let getSize = parseInt(currentSize);
+      getSize = getSize - 2;
+      getSize = getSize + 'px';
+      span.style.fontSize = getSize;
+} */
+
+/*==================================== Question No 37 =========================================
+bg color changer
+======================================= Answer =====================================*/
+/* let div = document.getElementById('div');
+let heading = document.getElementById('heading');
+function redColor(){
+  div.style.background = 'red'
+  heading.innerHTML = 'i am red'
+}
+
+function greenColor(){
+  div.style.background = 'green';
+  heading.innerHTML = 'i am green'
+}
+
+function pinkColor(){
+  div.style.background = 'pink';
+  heading.innerHTML = 'i am pink'
+}
+
+function blueColor(){
+  div.style.background = 'blue';
+  heading.innerHTML = 'i am blue'
+}
+
+function blackColor(){
+  div.style.background = 'black';
+  heading.innerHTML = 'i am black';
+  heading.style.color = 'white'
+}
+
+function yellowColor(){
+  div.style.background = 'yellow';
+  heading.innerHTML = 'i am yellow';
+  heading.style.color = 'red'
+}
+
+ */
+
+
+
+
+/*==================================== Question No 38 =========================================
+reduced
+======================================= Answer =====================================*/
+/* let array = [2,3,4,5]
+let ans = array.reduce((prev,next)=>{
+  return prev + next
+},0)
+console.log(ans)
+
+let str = ['i','love','js'];
+let result = str.reduce((prev,next)=>{
+  return(prev + ' ' + next)
+})
+console.log(result) */
+
+/* let obj = {item1 : 100,
+  item2 : 200,
+  item3 : 300
+}
+let ans = obj.reduce((item,index)=>{
+  return 
+}) */
+/*==================================== Question No 39 =========================================
+function declaration
+======================================= Answer =====================================*/
+
+/* greeting();
+function greeting(){
+  console.log('welcome')
+} */
 
 
 /*==================================== Question No 1 =========================================
-
+function expression 
 ======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
+greeting()
+let greeting = function(){
+  console.log('expressiong  welcome',)
+}
 
 
 
